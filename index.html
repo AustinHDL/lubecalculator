@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lube Volume Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Nav -->
+         <section id="nav" class="nav-area sticky">
+            <div class="nav-wrapper">
+                <div class="nav-background"></div>
+                <div class="nav-content">
+                    <div class="nav-content-title">
+                        <span>Lube Volume Calculator</span>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section id="main">
+            <div class="lube-volume">
+                <div class="lube-volume-content">
+                    <div class="lube-volume-title">
+                        <span>Volume. </span>
+                        <span class="sub-title">Key-in original volume.</span>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" name="volume" class="textbox-input" id="total-volume" maxlength="3" value="200" placeholder=" " onkeyup="calFunction()">
+                        <span class="textbox-label">Volume (L)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lube-radius">
+                <div class="lube-radius-content">
+                    <div class="lube-radius-title">
+                        <span>Radius. </span>
+                        <span class="sub-title">Key-in drum radius.</span>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" name="volume" class="textbox-input" id="drum-radius" maxlength="6" value="28.40" placeholder=" " onkeyup="calFunction()">
+                        <span class="textbox-label">Radius (cm)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lube-height">
+                <div class="lube-height-content">
+                    <div class="lube-height-title">
+                        <span>Height. </span>
+                        <span class="sub-title">Key-in measured height.</span>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" name="height" class="textbox-input" id="measured-height" maxlength="6" value="" placeholder=" " onkeyup="calFunction()">
+                        <span class="textbox-label">Height (cm)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lube-drum">
+                <div class="lube-drum-content">
+                    <div class="lube-drum-title">
+                        <span>Unit. </span>
+                        <span class="sub-title">Key-in unopened quantity.</span>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" name="unit" class="textbox-input" id="drum-quantity" maxlength="6" value="" placeholder=" " onkeyup="calFunction()">
+                        <span class="textbox-label">Unit (Drum)</span>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section id="summary">
+            <div class="summary-content-width">
+                <div class="summary-container">
+                    <div class="summary-total">
+                        <div class="summary-label">
+                            Volume Left
+                        </div>
+                        <div id="volume-left" class="summary-value">
+                            0.00 Liter
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
